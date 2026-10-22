@@ -1600,7 +1600,7 @@ mustRender();
 $("#must-reset").onclick=()=>{$("#must-confirm").innerHTML=`<span class="confirmbar" style="margin:0">Clear every tick? <button class="btn danger" id="must-yes">Clear</button><button class="btn" id="must-no">Cancel</button></span>`;$("#must-yes").onclick=()=>{store.set("idta-must",[]);$("#must-confirm").innerHTML="";mustRender()};$("#must-no").onclick=()=>{$("#must-confirm").innerHTML=""}};
 
 /* ================= accounts, sync & class features ================= */
-const SYNC_URL = "";   // Google Apps Script web-app URL; empty = accounts off (app works locally)
+const SYNC_URL = "https://script.google.com/macros/s/AKfycby-OwGobl9mg0MgXzQ5Y5llc4vTx3Az62l1Yq6ET7ilR4AjypOTRb9mY6RRlBHHTaOp/exec";   // Google Apps Script web-app URL; empty = accounts off (app works locally)
 const PROG_KEYS = ["idta-hist","idta-mocks","idta-miss","idta-must","idta-lab","idta-best","idta-lessons","idta-srs","idta-days","idta-goal","idta-examdate","idta-career"];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const ERR = {
